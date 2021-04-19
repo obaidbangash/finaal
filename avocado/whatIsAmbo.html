@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>AMB</title>
+</head>
+
+<body>
+    <!-- HEADER START -->
+    <div class="nav-menu">
+        <ul>
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 3</a></li>
+            <li><a href="#">Item 4</a></li>
+            <li><a href="#">Item 5</a></li>
+            <li><a href="#">Item 6</a></li>
+            <li><a href="#">Item 7</a></li>
+        </ul>
+    </div>
+    <header>
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-4 text-center">
+                    <div class="headerLeft-content d-flex justify-content-center align-items-center">
+                        <a class="pr-xl-5 pr-lg-4 pr-md-3 pr-2" href="#"><img class="img-fluid home" src="images/home-img.png" alt=""></a>
+                        <a href="#"><img class="img-fluid back-btn" src="images/back-btn-img.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-6 text-center">
+                    <a class="logo" class="d-inline-block" href="#"><img class="img-fluid m-auto d-block" src="images/logo-img.png" alt=""></a>
+                </div>
+                <div class="col-2 text-center">
+                    <button class="toggle-menu" type="button" id="nav-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END -->
+    <!-- CONTENT START -->
+    <div class="content">
+        <div class="what-is-ambo">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="ambo-detail">
+                            <h3 class="text-center"><span>What is</span> AMBO?</h3>
+                        </div>
+                        <div class="ambo-vido">
+                            <img class="img-fluid m-auto" src="images/video-bg.png" alt="">
+                            <button class="video-ptn" type="button" data-toggle="modal" data-target="#videoModal"><img class="img-fluid" src="images/video-player.png" alt=""></button>
+                        </div>
+                        <div class="ftr-detail">
+                            <h4>Ambo is...</h4>
+                            <p>
+                                A one-of-a-kind, customized, comprehensive digital platform to create and track company goals and methods to ensure strategic alignment and employee development throughout the year.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CONTENT END -->
+    <!-- FOOTER START -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="ftr-logo">
+                        <img class="img-fluid" src="images/ftr-logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="100%" height="350" src="https://video-api.wsj.com/api-video/player/v3/iframe.html?guid=3B08B7A8-A304-400B-A628-902C30A0C310"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("button.toggle-menu").click(function() {
+                $("body").toggleClass("active");
+            });
+
+            $('#nav-icon').click(function() {
+                $(this).toggleClass('open');
+            });
+            $('.nav-menu ul li a').click(function() {
+                $("body").removeClass("active");
+                $("#nav-icon").removeClass("open");
+            });
+        });
+    </script>
+</body>
+
+</html>

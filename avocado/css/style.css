@@ -1,0 +1,3978 @@
+    @font-face {
+        font-family: 'AvantGardeDemi';
+        src: url('../fonts/AvantGardeDemi.woff2') format('woff2'), url('../fonts/AvantGardeDemi.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'AvantGardeLTMedium';
+        src: url('../fonts/AvantGardeLTMedium.woff2') format('woff2'), url('../fonts/AvantGardeLTMedium.woff') format('woff');
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'HurmeGeometricSans4';
+        src: url('../fonts/HurmeGeometricSans4-SemiBold.woff2') format('woff2'), url('../fonts/HurmeGeometricSans4-SemiBold.woff') format('woff');
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'HurmeGeometricSans4';
+        src: url('../fonts/HurmeGeometricSans4-SemiBold.woff2') format('woff2'), url('../fonts/HurmeGeometricSans4-SemiBold.woff') format('woff');
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'HurmeGeometricSans4Black';
+        src: url('../fonts/HurmeGeometricSans4Black.woff2') format('woff2'), url('../fonts/HurmeGeometricSans4Black.woff') format('woff');
+        font-weight: 900;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'HurmeGeometricSans4Black';
+        src: url('../fonts/HurmeGeometricSans4Black.woff2') format('woff2'), url('../fonts/HurmeGeometricSans4Black.woff') format('woff');
+        font-weight: 900;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'ITCAvantGardeStdBold';
+        src: url('../fonts/ITCAvantGardeStdBold.woff2') format('woff2'), url('../fonts/ITCAvantGardeStdBold.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'olivier';
+        src: url('../fonts/olivier.woff2') format('woff2'), url('../fonts/olivier.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #fff !important;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    div {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container-fluid {
+        max-width: 1770px;
+    }
+    
+    .h2-heading {
+        font-size: 122px;
+        line-height: 100px;
+        color: rgb(0, 134, 63);
+        font-weight: 900;
+        font-family: 'HurmeGeometricSans4Black';
+        text-transform: uppercase;
+        margin: 0px 0px 146px;
+    }
+    
+    .h2-span {
+        font-size: 139px;
+        line-height: 105px;
+        color: rgb(0, 134, 63);
+        font-weight: normal;
+        font-family: 'olivier';
+        text-transform: capitalize;
+    }
+    
+    .p-properties {
+        font-size: 52px;
+        line-height: 62px;
+        font-family: 'HurmeGeometricSans4';
+        color: #001b0d;
+    }
+    
+    .h3-properties {
+        font-size: 48px;
+        line-height: 58px;
+        font-family: 'HurmeGeometricSans4Black';
+        color: #df0b55;
+        text-transform: uppercase;
+    }
+    
+    .accordion-heading {
+        font-size: 58px;
+        line-height: 68px;
+        font-family: 'HurmeGeometricSans4Black';
+        color: #fefefe;
+        text-transform: uppercase;
+        position: relative;
+    }
+    
+    .afm-btn {
+        font-size: 48px;
+        font-family: 'HurmeGeometricSans4';
+        text-transform: uppercase;
+        color: #0e3e1f;
+        text-align: center;
+        background-color: #8fdc00;
+        padding: 24px 240px;
+        border-radius: 81px;
+        box-shadow: 2px 16px 45px -2px rgba(0, 0, 0, 0.82);
+        display: inline-block;
+    }
+    
+    .fpo-text {
+        font-size: 140px;
+        line-height: 150px;
+        font-family: 'HurmeGeometricSans4black';
+        text-transform: uppercase;
+        color: #f0ff00;
+        position: absolute;
+        top: 68px;
+        right: 54px;
+    }
+    
+    .score-img {
+        position: relative;
+    }
+    /* Header start */
+    
+    header {
+        background: url('../images/header-img.png') no-repeat;
+        padding: 50px 0;
+        background-size: cover;
+        position: relative;
+        background-position: center center;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        width: 100%;
+    }
+    
+    header button.toggle-menu {
+        position: relative;
+        width: 152px;
+        background: transparent;
+        border: none;
+        outline: none;
+        padding: 0;
+        z-index: 11;
+    }
+    
+    header .logo {
+        max-width: 250px;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    header .back-btn {
+        max-width: 150px;
+    }
+    
+    header .home {
+        max-width: 80px;
+    }
+    
+    header button.toggle-menu span {
+        display: block;
+        height: 26px;
+        background: #f15d2a;
+        border-radius: 13px;
+        margin: 17px 0;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        height: 100%;
+        width: 320px;
+        left: 0;
+        top: 0;
+        z-index: 11;
+        background: #048643;
+        padding-top: 50px;
+        transform: translatex(-100%);
+        transition: all ease .5s;
+        overflow-y: auto;
+        padding-bottom: 10px;
+    }
+    
+    body.active {
+        overflow: hidden;
+        position: relative;
+    }
+    
+    body.active::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: rgba(255, 255, 255, .5);
+        z-index: 6;
+    }
+    
+    body.active .nav-menu {
+        transform: translatex(0%);
+    }
+    
+    .nav-menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav-menu ul li a {
+        font-size: 25px;
+        padding: 10px 15px;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        font-family: 'HurmeGeometricSans4Black';
+        border-bottom: 2px solid #fff;
+        transition: .2s;
+    }
+    
+    .nav-menu ul li:first-child a {
+        border-top: 2px solid #fff;
+    }
+    
+    .nav-menu ul li a:hover {
+        background: #fff;
+        color: #048643;
+    }
+    
+    #nav-icon {
+        width: 60px;
+        height: 70px;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+    }
+    
+    #nav-icon span {
+        display: block;
+        position: absolute;
+        height: 9px;
+        width: 100%;
+        background: #f15d2a;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+    }
+    
+    #nav-icon span:nth-child(1) {
+        top: 0px;
+    }
+    
+    #nav-icon span:nth-child(2),
+    #nav-icon span:nth-child(3) {
+        top: 18px;
+    }
+    
+    #nav-icon span:nth-child(4) {
+        top: 36px;
+    }
+    
+    #nav-icon.open span:nth-child(1) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+    }
+    
+    #nav-icon.open span:nth-child(2) {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    
+    #nav-icon.open span:nth-child(3) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    
+    #nav-icon.open span:nth-child(4) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+    }
+    /* Header End */
+    /* Content Start */
+    /* .content {
+        padding: 193px 0 212px;
+    } */
+    
+    .what-is-ambo {
+        padding: 169px 0 1131px;
+    }
+    
+    .section-afm-main {
+        padding: 192px 0 329px;
+    }
+    
+    .content.dashboard {
+        padding-top: 0 !important;
+        padding-bottom: 150px;
+    }
+    
+    .section-gift-avostar {
+        padding: 166px 0 187px;
+    }
+    
+    .content.gift-avostar {
+        background-color: #fff !important;
+    }
+    
+    .section-gift-avostar .avo-paragraph {
+        font-size: 48px;
+        line-height: 55px;
+        font-family: 'HurmeGeometricSans4-Bold';
+        color: #0c8a46;
+        margin-bottom: 103px;
+        text-transform: uppercase;
+        margin-top: 10px;
+    }
+    
+    .section-gift-avostar .custom-checkbox {
+        margin: 0 15px;
+    }
+    
+    .section-gift-avostar .custom-checkbox label {
+        min-width: auto;
+        width: 174px;
+        text-align: center;
+        height: auto;
+        background: transparent;
+    }
+    
+    .section-gift-avostar .custom-checkbox label img {
+        width: 161px;
+        height: 161px;
+    }
+    
+    .section-gift-avostar .mgr_body {
+        padding: 0 !important;
+    }
+    
+    .section-gift-avostar .avostar-label {
+        width: 748px;
+        font-size: 42px;
+        line-height: 50px;
+        font-family: 'HurmeGeometricSans4-Bold';
+        color: #0c8a46;
+        text-transform: uppercase;
+        padding: 10px 0 10px 23px;
+        margin-bottom: 0;
+    }
+    
+    .section-gift-avostar .avostar-field {
+        border: 2px solid #cecece !important;
+        font-size: 38px;
+        font-family: 'HurmeGeometricSans4';
+        color: #7d7d7d;
+    }
+    
+    .section-gift-avostar .employee-selector-list {
+        padding: 71px 67px;
+        height: 687px;
+    }
+    
+    .section-gift-avostar .custom-checkbox label p {
+        text-align: center;
+        padding: 14px 0;
+        font-weight: 500;
+        font-size: 32px;
+        text-transform: capitalize;
+        line-height: 41px;
+    }
+    
+    .section-gift-avostar .avostar-row {
+        margin-bottom: 81px;
+    }
+    
+    .section-gift-avostar .avostar-btn:first-child {
+        margin-right: 70px;
+    }
+    
+    .section-gift-avostar .avostar-btn {
+        font-size: 59px;
+        font-family: 'HurmeGeometricSans4-Bold';
+        padding: 10px 74px;
+        text-transform: uppercase;
+        border-radius: 75px;
+    }
+    
+    .section-employee {
+        padding: 149px 0 87px;
+    }
+    
+    .content.dashboard .profile-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 11px 0 66px;
+    }
+    
+    .content.dashboard .profile-img {
+        border-radius: 50%;
+        border: 17px solid #00863f;
+        width: 293px;
+        height: 293px;
+        overflow: hidden;
+        margin-right: 55px;
+    }
+    
+    .content.dashboard .profile-img img {
+        width: 100%;
+        overflow: hidden;
+        height: 100%;
+    }
+    
+    .content.dashboard .profile-info h2 {
+        font-size: 100px;
+        line-height: 110px;
+    }
+    
+    .content .ambo-box {
+        background: #00863f;
+        border-radius: 50px;
+        padding: 167px 15px 182px;
+        min-height: 562px;
+        border: 19px solid #00d363;
+        margin-bottom: 117px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .content a {
+        text-decoration: none;
+    }
+    
+    .pg-section {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #00863f;
+        padding: 40px 43px;
+        margin-bottom: 80px;
+    }
+    
+    .pg-section h2 {
+        color: #fff;
+        font-size: 58px;
+        line-height: 68px;
+        font-family: 'HurmeGeometricSans4Black';
+        text-transform: uppercase !important;
+    }
+    
+    .pg-section .pg-tab-btn span i {
+        font-size: 100px;
+        line-height: 45px;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+    
+    .pg-section .collapsed {
+        transform: rotate(180deg);
+    }
+    
+    .pg-tab {
+        width: 100%;
+    }
+    
+    .bg-section {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #f15d2a;
+        padding: 40px 43px;
+        margin-bottom: 80px;
+    }
+    
+    .bg-section h2 {
+        color: #fff;
+        font-size: 58px;
+        line-height: 68px;
+        font-family: 'HurmeGeometricSans4Black';
+        text-transform: uppercase !important;
+    }
+    
+    .bg-section .bg-tab-btn span i {
+        font-size: 100px;
+        line-height: 45px;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+    
+    .bg-section .collapsed {
+        transform: rotate(180deg);
+    }
+    
+    .bg-tab {
+        width: 100%;
+    }
+    
+    .content .ambo-box span {
+        font-size: 100px;
+        line-height: 105px;
+        color: #fff;
+        font-weight: normal;
+        font-family: 'olivier';
+        text-transform: capitalize;
+    }
+    
+    .content .ambo-box h3 {
+        margin: 0;
+        font-size: 88px;
+        line-height: 100px;
+        color: #fff;
+        font-weight: 900;
+        font-family: 'HurmeGeometricSans4Black';
+        text-transform: uppercase;
+    }
+    
+    .dropdown-menu {
+        width: 100%;
+    }
+    
+    .content .blue-box {
+        background-color: #007ec1;
+        border-color: #29b5ff;
+    }
+    
+    .content .orange-box {
+        background-color: #f15d2a;
+        border-color: #f9b8a2;
+    }
+    
+    .content .lightGreen-box {
+        background-color: #8fdc00;
+        border-color: #b4ff2a;
+    }
+    
+    .content .pink-box,
+    .content .red-box,
+    .content .lightBlue-box {
+        min-height: auto;
+        padding: 109px 15px;
+    }
+    
+    .content .pink-box {
+        background-color: #df0b55;
+        border-color: #f98ab1;
+    }
+    
+    .content .red-box {
+        background-color: #cb0014;
+        border-color: #ff3346;
+    }
+    
+    .content .lightBlue-box {
+        background-color: #00aabe;
+        border-color: #0ce5ff;
+    }
+    
+    .content .ambo-detail h3 {
+        margin: 0 0 146px;
+        font-size: 139px;
+        line-height: 100px;
+        color: #00863f;
+        font-weight: 900;
+        font-family: 'HurmeGeometricSans4Black';
+        text-transform: uppercase;
+    }
+    
+    .content .ambo-detail span {
+        font-size: 122px;
+        line-height: 105px;
+        color: #00863f;
+        font-weight: normal;
+        font-family: 'olivier';
+        text-transform: capitalize;
+    }
+    
+    .ambo-vido {
+        position: relative;
+        margin-bottom: 220px;
+    }
+    
+    .ambo-vido button.video-ptn {
+        position: absolute;
+        width: 342px;
+        height: 342px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        border: 0;
+        background: transparent;
+        outline: none;
+        top: 50%;
+        transform: translate(0%, -50%);
+    }
+    
+    .ftr-detail {
+        margin-bottom: 200px;
+    }
+    
+    .ftr-detail h4 {
+        margin: 0 0 45px;
+        font-size: 85px;
+        line-height: 65px;
+        color: #00863f;
+        font-weight: 900;
+        font-family: 'HurmeGeometricSans4Black';
+        text-transform: uppercase;
+    }
+    
+    .ftr-detail p {
+        margin: 0;
+        font-size: 52px;
+        line-height: 64px;
+        color: #161817;
+        font-weight: normal;
+        font-family: arial;
+    }
+    
+    div#videoModal button.close span {
+        color: #00863f;
+        font-size: 50px;
+    }
+    
+    .team h2 {
+        margin: 0 0 100px;
+        font-size: 130px;
+        line-height: 100px;
+        color: #0c8a46;
+        font-weight: normal;
+        font-family: 'olivier';
+        text-align: center;
+    }
+    
+    .team .team-col {
+        margin-bottom: 156px;
+    }
+    
+    .team .team-col img {
+        display: block;
+        margin: 0 auto;
+        padding: 27px;
+        background: #8fdc00;
+        border-radius: 50%;
+        width: 500px;
+        height: 500px;
+    }
+    
+    .team .team-col h4 {
+        margin: 47px 0 0;
+        font-size: 85px;
+        line-height: 95px;
+        color: #0c8a46;
+        font-weight: 900;
+        font-family: 'HurmeGeometricSans4Black';
+    }
+    
+    #sidebar {
+        position: fixed;
+        top: 0;
+        display: block;
+        min-height: 100%;
+        overflow: hidden;
+    }
+    
+    .main {
+        margin-left: 18%;
+    }
+    
+    .AFM_Brand {
+        position: absolute;
+        bottom: 0;
+    }
+    
+    .info-filter {
+        background-color: #eee;
+        border-bottom: 24px;
+        padding-bottom: 3px;
+        padding-left: 3px;
+        padding-right: 3px;
+        border-radius: 10px 10px 23px 23px;
+        width: 100%;
+    }
+    
+    .info-filter span {
+        text-align: center;
+        display: block;
+        padding: 19px;
+        font-size: 15px;
+    }
+    
+    .filter-group {
+        background-color: #fff;
+        padding: 10px 15px;
+        border-radius: 24px;
+        justify-content: space-between;
+    }
+    
+    .filter-group .dropdown {
+        flex: 35%;
+        max-width: 35%;
+    }
+    
+    .filter-group .dropdown button {
+        width: 100%;
+    }
+    
+    .filter-group button {
+        background-color: white;
+        color: #1e1e1e;
+        border: 0;
+        padding: 6px 15px !important;
+    }
+    
+    .filter-group button.active {
+        background-color: #00823d !important;
+        color: #fff !important;
+        box-shadow: 0 !important;
+        outline: none !important;
+        border: 0;
+    }
+    
+    .filter-group button:hover {
+        background-color: #00823d !important;
+        color: #fff !important;
+        box-shadow: 0 !important;
+        outline: none !important;
+        border: 0;
+    }
+    /**********************DASHBOARD STYLES*/
+    
+    h2.orange {
+        color: #ED5E36;
+    }
+    
+    .key {
+        float: right;
+    }
+    
+    .mgr_heading {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    .dashboard select.employee {
+        border-radius: 2rem !important;
+        width: 100% !important;
+        border: 1px solid #00823d !important;
+        margin: 0 !important;
+        padding: 0.5em 3.5em 0.5em 1em !important;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-appearance: none;
+        text-transform: uppercase;
+        color: #00863f;
+        font-weight: bold;
+        line-height: 1rem;
+    }
+    
+    .toggle {
+        display: block;
+        padding: 5px 10px;
+        border-radius: 35px;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 2px #ccc;
+        z-index: 1;
+        position: relative;
+        background-color: #fff;
+    }
+    
+    .toggle a {
+        display: inline-block;
+        padding: 5px 20px;
+        margin: 5px;
+        cursor: pointer;
+        font-size: 13px;
+        color: #99c93d;
+    }
+    
+    .toggle a:hover {
+        color: #ccc !important;
+    }
+    
+    .toggle a.active {
+        display: inline-block;
+        padding: 5px 40px;
+        border-radius: 20px;
+        background-color: #00823d;
+        margin: 5px;
+        color: #fff;
+    }
+    
+    .colors {
+        background-color: #eee;
+        padding: 30px 5px 10px 5px;
+        border-radius: 0 0 10px 10px;
+        margin-top: -20px;
+        z-index: 1;
+        position: relative;
+    }
+    
+    .colors span {
+        font-size: 9px;
+        display: inline-block;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    
+    .colors .block {
+        background-color: #00823d;
+        width: 8px;
+        height: 8px;
+        margin-right: 5px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    .colors .yellow .block {
+        background-color: #fff004;
+    }
+    
+    .colors .red .block {
+        background-color: #d0102b;
+    }
+    
+    .colors .blue .block {
+        background-color: #0068dc;
+    }
+    
+    .colors .black .block {
+        background-color: #000;
+    }
+    
+    .colors .target .block {
+        background-image: url(../../employee/images/target.png);
+        background-color: transparent;
+    }
+    
+    .colors .ma .block {
+        background-image: url(../../employee/images/ma-check.png);
+        background-color: transparent;
+    }
+    
+    .mgr_body {
+        min-height: auto !important;
+    }
+    
+    .top-label {
+        background-color: #e6e6e6;
+        color: #414141;
+        text-transform: uppercase;
+        padding: 5px 10px;
+        font-family: 'ITCAvantGardeStd-Bold';
+    }
+    
+    table.project-goals {
+        width: 100%;
+        text-transform: uppercase;
+        font-family: 'ITCAvantGardeStd-Bold';
+        border-bottom: 1px solid #fff;
+        margin-bottom: 35px;
+    }
+    
+    table.project-goals tr.obj {
+        display: none;
+    }
+    
+    table.project-goals tr.obj.show {
+        display: table-row;
+    }
+    
+    table.project-goals td {
+        background-color: #e6e6e6;
+        font-size: 14px;
+        text-align: center;
+        padding-top: 5px;
+        width: 6%;
+    }
+    
+    table.project-goals th {
+        width: 6%;
+        padding: 10px;
+        text-align: center;
+        font-size: 30px;
+        color: #00823d;
+        background-color: #acacac;
+        border-right: 1px solid #fff;
+        text-transform: uppercase;
+        border-bottom: 1px solid #fff;
+    }
+    
+    table.project-goals .first-col {
+        text-align: left;
+        padding: 8px 19px 4px 10px;
+        font-family: 'ITCAvantGardeStd-Bold';
+        line-height: 15px;
+    }
+    
+    table.project-goals th.first-col {
+        background-color: #00823d;
+        color: #fff;
+        font-size: 13px;
+        text-align: left;
+        padding-left: 19px;
+        width: 18%;
+    }
+    
+    table.project-goals td.first-col {
+        text-align: left;
+        padding-left: 19px;
+        width: 18%;
+    }
+    
+    table.project-goals .empty {
+        background-color: transparent;
+    }
+    
+    table.project-goals td.first-col {
+        background-color: #e6e6e6;
+        color: green;
+        border-right: 1px solid #fff;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    
+    table.project-goals .dates td.first-col {
+        color: #414141;
+        border-right: 1px solid #fff;
+        text-align: left;
+        padding-left: 19px;
+    }
+    
+    table.project-goals .dates td {
+        text-align: center;
+        padding: 5px 0;
+        background-color: #e6e6e6;
+        border-right: 1px solid #fff;
+        font-size: 13px;
+        border-bottom: 1px solid #fff;
+    }
+    
+    table.project-goals .dates .final-score {
+        background-color: #636363;
+        color: #fff;
+        min-width: 100px;
+    }
+    
+    table.project-goals .obj-score {
+        border-left: 1px solid #fff;
+        text-align: center;
+        width: 4%;
+    }
+    
+    table.project-goals .total {
+        background-color: green;
+        color: #fff;
+        text-align: center;
+        width: 4%;
+    }
+    
+    tr.obj {
+        border-bottom: 1px solid #fff;
+    }
+    
+    .obj td {
+        position: relative;
+        font-family: ITCAvantGardeGothicLTMedium;
+    }
+    
+    .obj td.created {
+        background-color: #0068dc;
+        border-right: 1px solid #fff;
+    }
+    
+    .obj td.started {
+        background-color: #fff004;
+        border-right: 1px solid #fff;
+    }
+    
+    .obj td.cancelled {
+        background-color: #000;
+        border-right: 1px solid #fff;
+    }
+    
+    .obj td.target {
+        background-image: url(../../employee/images/target-white.png);
+        background-repeat: no-repeat;
+        background-position: 50%;
+        border-right: 1px solid #fff;
+    }
+    
+    .obj td.late {
+        background-color: #d0102b;
+        border-right: 1px solid #fff;
+    }
+    
+    .obj td.ma {
+        background-image: url(../../employee/images/ma-yellow.png);
+        background-repeat: no-repeat;
+        background-position: 50%;
+        border-right: 1px solid #fff;
+        background-size: 15px;
+    }
+    
+    .obj td.completed {
+        background-color: #00823d;
+        border-right: 1px solid #fff;
+        color: #fff;
+    }
+    
+    .first-col .plus {
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        height: 100%;
+        border: 0;
+        background-color: #f36523;
+        border-radius: 0;
+        display: flex;
+        top: 0;
+        align-items: center;
+        color: #fff;
+        font-size: 13px;
+        padding: 0 3px;
+    }
+    
+    .description td,
+    .description td p {
+        text-align: left;
+        font-weight: normal;
+        text-transform: none;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    
+    .description td {
+        padding: 15px 20px !important;
+    }
+    
+    .description {
+        border-bottom: 2px solid #fff;
+        display: none;
+    }
+    
+    .i {
+        display: none;
+    }
+    
+    .both .i {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 4px;
+        text-transform: none;
+        color: #fff;
+        font-family: cursive;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 0 9px 0 12px;
+    }
+    
+    .both .number {
+        display: none;
+    }
+    
+    .show.both .number {
+        display: block;
+        color: #fff;
+    }
+    
+    .show.target.started .number {
+        color: #000;
+    }
+    
+    .show.both {
+        background-image: none !important;
+        padding-right: 15px;
+    }
+    
+    .show.both.target {
+        padding-right: 0;
+    }
+    
+    .search_form {
+        margin-top: 10px;
+    }
+    /***************************END DASHBOARD STYLES*****************/
+    /* Content End */
+    /* Afmcreed page starts here */
+    
+    .section-creed {
+        padding: 157px 0 442px;
+    }
+    
+    .section-creed h2 {
+        font-size: 140px;
+        line-height: 150px;
+        font-weight: 400;
+        font-family: 'olivier';
+        color: #0c8a46;
+        text-align: center;
+        padding-bottom: 113px;
+    }
+    
+    .section-creed h2 span {
+        font-size: 122px;
+        line-height: 130px;
+        font-family: 'HurmeGeometricSans4Black';
+        color: #0c8a46;
+    }
+    
+    .section-creed .training {
+        background-color: #00863f;
+        padding: 46px 53px;
+    }
+    
+    .section-creed .training h3 {
+        font-size: 58px;
+        line-height: 65px;
+        font-family: 'HurmeGeometricSans4Black';
+        color: #fefefe;
+        text-transform: uppercase;
+    }
+    
+    .section-creed .training-development {
+        background-color: #ebebeb;
+        padding: 49px;
+    }
+    
+    .section-creed .training-slider {
+        background-color: #8fdc00;
+        padding: 36px 0;
+    }
+    
+    .section-creed .training-slider .aware-slide img {
+        max-width: 640px;
+        margin: 0 auto;
+    }
+    
+    .training-slider .owl-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .training-slider .owl-nav button:focus {
+        outline: none;
+        border: none;
+    }
+    
+    .training-slider .owl-nav button.owl-prev,
+    .training-slider .owl-nav button.owl-next {
+        background-color: #f15d2a !important;
+        width: 97px;
+        text-align: center;
+        height: 97px;
+        border-radius: 50%;
+    }
+    
+    .training-slider .owl-nav button.owl-next {
+        position: absolute;
+        top: 50%;
+        right: -50px;
+        transform: translateY(-50%);
+    }
+    
+    .training-slider .owl-nav button.owl-next::after {
+        content: '\f061';
+        position: absolute;
+        font-family: 'Fontawesome';
+        font-size: 50px;
+        color: #aa340b;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .training-slider .owl-nav button.owl-prev::after {
+        content: '\f060';
+        position: absolute;
+        font-family: 'Fontawesome';
+        font-size: 50px;
+        color: #aa340b;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .training-slider .owl-dot {
+        display: none;
+    }
+    
+    .training-slider .owl-nav button.owl-prev {
+        position: absolute;
+        top: 50%;
+        left: -50px;
+        transform: translateY(-50%);
+    }
+    
+    .section-creed .training-content {
+        padding: 40px 0;
+    }
+    
+    .section-creed .training-content h4 {
+        font-size: 48px;
+        line-height: 65px;
+        font-family: 'HurmeGeometricSans4Black';
+        color: #00863f;
+        text-transform: uppercase;
+    }
+    
+    .section-creed .training-content p {
+        font-size: 47px;
+        line-height: 65px;
+        font-family: 'HurmeGeometricSans4';
+        padding-left: 56px;
+        position: relative;
+    }
+    
+    .section-creed .training-content p::before {
+        content: '';
+        position: absolute;
+        left: 16px;
+        top: 17px;
+        width: 30px;
+        height: 30px;
+        background-color: #8fd200;
+        border-radius: 50%;
+    }
+    
+    .section-creed .training-content p span {
+        font-family: 'HurmeGeometricSans4Black';
+    }
+    /* Afmcreed page ends here */
+    /* training  page starts here */
+    
+    .section-training {
+        padding: 158px 0 672px;
+    }
+    
+    .section-training .card-header {
+        background-color: #00863f;
+    }
+    
+    .section-training .training-slider {
+        margin-bottom: 39px;
+    }
+    
+    .section-training .p-head-h4 {
+        color: #00863f;
+        font-family: 'HurmeGeometricSans4black';
+        text-transform: uppercase;
+        font-size: 48px;
+        margin-bottom: 17px;
+    }
+    
+    .section-training .card-content .p-properties {
+        margin-bottom: 10px;
+    }
+    
+    .section-training .card-content .p-properties span {
+        font-family: 'HurmeGeometricSans4black';
+    }
+    
+    .section-training .training-global p {
+        position: relative;
+        padding-left: 56px;
+    }
+    
+    .section-training .training-global p::after {
+        content: '';
+        position: absolute;
+        left: 16px;
+        top: 17px;
+        width: 30px;
+        height: 30px;
+        background-color: #8fd200;
+        border-radius: 50%;
+    }
+    /* training  page ends here */
+    /* strategic  page starts here */
+    
+    .content.strategic {
+        padding: 0 0 181px;
+    }
+    
+    .section-framework {
+        padding: 193px 0 0px;
+    }
+    
+    .section-framework .frame-work-heading h2 {
+        font-size: 140px;
+        line-height: 150px;
+        font-weight: 400;
+        font-family: 'olivier';
+        color: #0c8a46;
+        text-align: center;
+        padding-bottom: 113px;
+    }
+    
+    .section-framework .frame-work-heading h2 span {
+        font-size: 122px;
+        line-height: 130px;
+        font-family: 'HurmeGeometricSans4Black';
+        color: #0c8a46;
+    }
+    
+    .section-framework .our-purpose {
+        background-color: #00863f;
+        padding: 53px 70px;
+        margin-bottom: 33px;
+    }
+    
+    .section-framework .our-purpose h3 {
+        font-size: 96px;
+        line-height: 110px;
+        font-family: 'olivier';
+        color: #8fdc00;
+    }
+    
+    .section-framework .our-purpose h2 {
+        font-size: 100px;
+        line-height: 120px;
+        font-family: 'HurmeGeometricSans4Black';
+        color: #fefefe;
+        text-transform: uppercase;
+        word-break: break-word;
+    }
+    
+    .section-framework .position-content {
+        background-color: #8fdc00;
+        padding: 53px 70px;
+        margin-bottom: 33px;
+    }
+    
+    .section-framework .position-content h2 {
+        font-size: 130px;
+        line-height: 140px;
+        font-family: 'olivier';
+        color: #003a1b;
+        text-transform: capitalize;
+    }
+    
+    .section-framework .position-content h3 {
+        font-size: 100px;
+        line-height: 110px;
+        font-family: 'HurmeGeometricSans4Black';
+        color: #fff;
+    }
+    
+    .section-framework .meet-content img {
+        width: 100%;
+    }
+    
+    .section-framework .meet-content p {
+        font-size: 47px;
+        line-height: 60px;
+        font-family: 'HurmeGeometricSans4';
+        color: #ffffff;
+        text-transform: capitalize;
+    }
+    
+    .section-framework .meet-content h2 {
+        font-size: 130px;
+        line-height: 140px;
+        font-family: 'olivier';
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-top: 19px;
+    }
+    
+    .section-framework .maria-content {
+        background-color: #f15d2a;
+        padding: 53px 70px;
+        margin-bottom: 33px;
+    }
+    
+    .section-framework .maria-content h2 {
+        color: #7f000c;
+    }
+    
+    .section-framework .maya-content {
+        background-color: #7f000c;
+        padding: 53px 70px;
+        margin-bottom: 33px;
+    }
+    
+    .section-framework .maya-content h2 {
+        color: #f15d2a;
+    }
+    
+    .section-framework .main-stream-content {
+        background-color: #7f000c;
+        padding: 53px 70px;
+        margin-bottom: 33px;
+    }
+    
+    .section-framework .main-stream-content h2 {
+        color: #f15d2a;
+    }
+    
+    .section-framework .food-service-content {
+        background-color: #007ec1;
+        padding: 53px 70px;
+        margin-bottom: 33px;
+    }
+    
+    .section-framework .food-service-content h2 {
+        color: #8fdc00;
+    }
+    /* section our voice starts here */
+    
+    .section-framework .our-voice {
+        padding: 53px 18px 53px 70px;
+        margin-bottom: 33px;
+        min-height: 494px;
+    }
+    
+    .section-framework .our-voice h6 {
+        font-size: 52px;
+        line-height: 58px;
+        font-family: 'olivier';
+        color: #8fdc00;
+        text-transform: capitalize;
+        margin-bottom: 50px;
+    }
+    
+    .section-framework .our-voice.eat {
+        background-color: #df0b55;
+    }
+    
+    .section-framework .our-voice.goodness {
+        background-color: #ff3346;
+    }
+    
+    .section-framework .our-voice.source {
+        background-color: #960739;
+    }
+    
+    .section-framework .our-voice h2 {
+        font-size: 62px;
+        line-height: 70px;
+        font-family: 'HurmeGeometricSans4Black';
+        color: #ffffff;
+        text-transform: uppercase;
+        word-break: break-word;
+    }
+    
+    .section-framework .mexicanity {
+        background-color: #003a1b;
+        text-align: center;
+        padding: 50px 0;
+        margin-bottom: 33px;
+    }
+    
+    .section-framework .mexicanity h4 {
+        font-size: 52px;
+        line-height: 58px;
+        font-family: 'HurmeGeometricSans4black';
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+    
+    .section-framework .mexicanity h2 {
+        font-size: 230px;
+        line-height: 238px;
+        font-family: 'olivier';
+        color: #8fdc00;
+        text-transform: capitalize;
+    }
+    
+    .section-framework .mexicanity p {
+        font-size: 52px;
+        line-height: 58px;
+        font-family: 'HurmeGeometricSans4';
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+    
+    .section-framework .our-uses {
+        margin-bottom: 33px;
+    }
+    
+    .section-framework .our-uses .handleheld {
+        max-width: 20%;
+        width: 100%;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 132px 25px 77px 30px;
+    }
+    
+    .section-framework .our-uses .handleheld h6 {
+        font-size: 30px;
+        line-height: 40px;
+        font-family: 'HurmeGeometricSans4Black';
+        color: #ffffff;
+        text-transform: uppercase;
+        margin-bottom: 39px;
+    }
+    
+    .section-framework .our-uses .handleheld h3 {
+        font-size: 64px;
+        line-height: 70px;
+        font-family: 'olivier';
+        text-transform: capitalize;
+    }
+    
+    .section-framework .our-uses .handleheld.core {
+        background-color: #0ce5ff;
+        padding-top: 60px;
+    }
+    
+    .section-framework .our-uses .handleheld.core h3 {
+        color: #004c75;
+    }
+    
+    .section-framework .our-uses .handleheld.chips {
+        background-color: #00bad0;
+    }
+    
+    .section-framework .our-uses .handleheld.chips h3 {
+        color: #004c75;
+    }
+    
+    .section-framework .our-uses .handleheld.traditional {
+        background-color: #007ec1;
+    }
+    
+    .section-framework .our-uses .handleheld.traditional h3 {
+        color: #0ce5ff;
+    }
+    
+    .section-framework .our-uses .handleheld.salads {
+        background-color: #004c75;
+    }
+    
+    .section-framework .our-uses .handleheld.salads h3 {
+        color: #0ce5ff;
+    }
+    
+    .section-framework .our-uses .handleheld.mts {
+        background-color: #006672;
+    }
+    
+    .section-framework .our-uses .handleheld.mts h3 {
+        color: #0ce5ff;
+    }
+    
+    .section-framework .development-content {
+        margin-bottom: 33px;
+    }
+    
+    .section-framework .development {
+        padding: 53px 18px 53px 70px;
+    }
+    
+    .section-framework .development h6 {
+        font-size: 52px;
+        line-height: 58px;
+        font-family: 'olivier';
+        text-transform: capitalize;
+        color: #8fdc00;
+        margin-bottom: 104px;
+    }
+    
+    .section-framework .development h2 {
+        font-size: 42px;
+        line-height: 48px;
+        font-family: 'HurmeGeometricSans4Black';
+        text-transform: capitalize;
+        color: #fff;
+    }
+    
+    .section-framework .development.prefernce {
+        background-color: #f15d2a;
+    }
+    
+    .section-framework .development.growth {
+        background-color: #aa340b;
+    }
+    
+    .section-framework .development.demand {
+        background-color: #e03900;
+    }
+    
+    .section-framework {
+        max-width: 2013px;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        position: relative;
+    }
+    
+    .section-framework .framework-content {
+        max-width: 1756px;
+        margin-left: auto;
+    }
+    
+    .framework-content .list-number {
+        position: absolute;
+        left: -235px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 215px;
+        height: 215px;
+        font-family: 'olivier';
+        font-size: 175px;
+        text-align: center;
+        background-color: #000;
+        border-radius: 50%;
+    }
+    
+    .section-framework .numbering {
+        position: relative;
+    }
+    
+    .section-framework .our-purpose .list-number {
+        background-color: #8fd200;
+        color: #00863f;
+    }
+    
+    .section-framework .position-content .list-number {
+        background-color: #00863f;
+        color: #8fd200;
+    }
+    
+    .section-framework .maria-content .list-number {
+        background-color: #7f000c;
+        color: #f15d2a;
+    }
+    
+    .section-framework .maya-content .list-number {
+        background-color: #f15d2a;
+        color: #7f000c;
+    }
+    
+    .section-framework .food-service-content .list-number {
+        background-color: #007ec1;
+        color: #004c75;
+    }
+    
+    .section-framework .voice-content .list-number {
+        background-color: #7f000c;
+        color: #df0b55;
+    }
+    
+    .section-framework .mexicanity .list-number {
+        background-color: #8fdc00;
+        color: #003a1b;
+    }
+    
+    .section-framework .our-uses .list-number {
+        background-color: #004c75;
+        color: #0ce5ff;
+    }
+    
+    .section-framework .development-content .list-number {
+        background-color: #aa340b;
+        color: #f15d2a;
+    }
+    /* section our voice ends here */
+    
+    .modal.show {
+        padding-right: 0 !important;
+    }
+    
+    .modal.show .modal-dialog {
+        max-width: 100vw;
+        height: 100vh;
+        margin-top: 0;
+        margin-right: 0;
+        margin: 0 !important;
+    }
+    
+    .modal.show .modal-content {
+        height: 100vh;
+        position: relative;
+    }
+    
+    .modal.show .modal-content .modal-body iframe {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .modal.show .modal-content .modal-header {
+        padding: 0;
+    }
+    
+    div#videoModal button.close {
+        position: absolute;
+        right: 0px;
+        z-index: 111;
+        top: -10px;
+        opacity: 1;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    div#videoModal button.close span {
+        font-size: 30px;
+    }
+    /* strategic  page ends here */
+    /* page who we are starts here */
+    
+    .section-who-we-are {
+        padding: 147px 0 1160px;
+    }
+    
+    .section-who-we-are .ambo-vido {
+        margin-bottom: 58px;
+    }
+    /* page who we are ends here */
+    /* page afm bhags starts here */
+    
+    .section-bhags {
+        padding: 169px 0 306px;
+    }
+    
+    .section-bhags .ceo-president {
+        background-color: #f15d2a;
+        padding: 42px 60px;
+        position: relative;
+        margin-bottom: 78px;
+    }
+    
+    .section-bhags .ceo-content {
+        border-left: 3px solid #7f000c;
+        padding-left: 57px;
+    }
+    
+    .section-bhags .ceo-content h3 {
+        font-size: 42px;
+        line-height: 48px;
+        font-family: 'HurmeGeometricSans4Black';
+        color: #7f000c;
+    }
+    
+    .section-bhags .ceo-content h3 span {
+        font-family: 'HurmeGeometricSans4';
+        color: #fff;
+    }
+    
+    .section-bhags .ceo-sec h4 {
+        font-size: 64px;
+        line-height: 70px;
+        font-family: 'olivier';
+        color: #ffffff;
+        max-width: 277px;
+        margin-left: auto;
+        text-transform: capitalize;
+    }
+    
+    .section-bhags .card {
+        margin-bottom: 68px;
+    }
+    
+    .section-bhags .ceo-sec .ceo-img {
+        position: absolute;
+        top: -196px;
+        left: 0;
+    }
+    
+    .section-bhags .accordions .card-header {
+        background-color: #f15d2a;
+        padding: 49px 65px;
+        cursor: pointer;
+        position: relative;
+    }
+    
+    .section-bhags .accordions .card-header h5::after {
+        content: '\f0dd';
+        font-family: 'Fontawesome';
+        position: absolute;
+        right: 60px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 70px;
+        color: #fff;
+    }
+    
+    .section-bhags .accordions .card-header h5[aria-expanded="true"]:after {
+        transform: rotate(-180deg);
+    }
+    
+    .section-bhags .accordions .card-header h5 {
+        font-size: 58px;
+        line-height: 64px;
+        font-family: 'HurmeGeometricSans4Black';
+        color: #fff;
+        text-transform: uppercase;
+        position: relative;
+    }
+    
+    .section-bhags .card-body {
+        background-color: #ebebeb;
+        padding: 60px 65px;
+    }
+    
+    .section-bhags .card-body h3 {
+        font-size: 50px;
+        line-height: 60px;
+        font-family: 'HurmeGeometricSans4';
+        color: #001b0d;
+        text-transform: capitalize;
+    }
+    
+    .section-bhags .card-body h3 span {
+        color: #f15d2a;
+        font-family: 'HurmeGeometricSans4Black';
+    }
+    /* page afm bhags ends here */
+    /* culture page starts here */
+    
+    .section-culture {
+        padding: 149px 0 198px;
+    }
+    
+    .section-culture .card {
+        margin-bottom: 95px;
+    }
+    
+    .accordions .card-header {
+        padding: 49px 61px;
+        cursor: pointer;
+        position: relative;
+    }
+    
+    .section-culture .accordions .guidelines {
+        background-color: #df0b55;
+    }
+    
+    .section-culture .accordions .mexicanity {
+        background-color: #cb0014;
+    }
+    
+    .section-culture .accordions .this-is-us {
+        background-color: #00863f;
+    }
+    
+    .section-culture .accordions .competencies {
+        background-color: #8fdc00;
+    }
+    
+    .section-culture .accordions .culture-accordion {
+        background-color: #00a8bc;
+    }
+    
+    .section-culture .accordions .mas {
+        background-color: #007ec1;
+    }
+    
+    .section-culture .accordions .afm-life {
+        background-color: #f15d2a;
+    }
+    
+    .section-culture .accordions .accordion-img {
+        margin-bottom: 51px;
+    }
+    
+    .section-culture .accordions .accordion-img img {
+        max-width: 100%;
+    }
+    
+    .section-culture .accordions .card-header h5::after {
+        content: '\f0dd';
+        font-family: 'Fontawesome';
+        position: absolute;
+        right: 60px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 70px;
+        color: #fff;
+    }
+    
+    .section-culture .accordions .card-header h5[aria-expanded="true"]:after {
+        transform: rotate(-180deg);
+    }
+    
+    .section-culture .accordions .card-header h5 {
+        font-size: 58px;
+        line-height: 64px;
+        font-family: 'HurmeGeometricSans4Black';
+        color: #fff;
+        text-transform: uppercase;
+        position: relative;
+    }
+    
+    .accordions .card-body {
+        background-color: #ebebeb;
+        padding: 49px 61px;
+    }
+    
+    .section-culture .organization {
+        padding: 38px 58px;
+        background-color: #efefef;
+        margin-bottom: 114px;
+    }
+    
+    .section-culture .organization .p-properties {
+        margin-bottom: 0;
+    }
+    
+    .section-culture .h3-properties {
+        margin-bottom: 16px;
+    }
+    
+    .section-culture .p-properties {
+        margin-bottom: 73px;
+    }
+    
+    .section-culture .slider-color {
+        width: 100%;
+        height: 750px;
+        background-color: #8fdc00;
+    }
+    
+    .section-culture .p-properties span {
+        color: #f15d2a;
+        font-family: 'HurmeGeometricSans4black';
+    }
+    
+    .section-culture .afm-life-body .p-properties {
+        margin-bottom: 48px;
+    }
+    
+    .section-culture .card-body .ambo-vido {
+        margin-bottom: 36px;
+    }
+    
+    .section-culture .card-body .ftr-detail {
+        margin-bottom: 0;
+    }
+    
+    .section-culture .card-body .ftr-detail .p-properties {
+        font-family: 'HurmeGeometricSans4';
+    }
+    
+    .section-culture .mas-card .p-properties {
+        margin-bottom: 0;
+    }
+    
+    .section-culture .this-is-us-card .p-properties {
+        margin-bottom: 0;
+    }
+    
+    .section-culture .competencies .p-properties {
+        margin-bottom: 0;
+    }
+    
+    .section-culture .mexicanity-card .p-properties {
+        margin-bottom: 0;
+    }
+    
+    .section-culture .card {
+        border: none !important;
+    }
+    
+    .section-culture .culture-accordion p:last-child {
+        margin-bottom: 0;
+    }
+    /* culture page ends here */
+    /* afm-culture page starts here */
+    
+    .section-afmcreed {
+        padding: 158px 0 297px;
+    }
+    
+    .section-afmcreed .card {
+        margin-bottom: 86px;
+    }
+    
+    .section-afmcreed .card-header {
+        padding: 48px 52px;
+        background-color: #00863f;
+    }
+    
+    .section-afmcreed .card-body {
+        padding: 49px 52px 131px;
+        background-color: #ebebeb;
+    }
+    
+    .section-afmcreed .card-body .training-slider {
+        margin-bottom: 33px;
+    }
+    
+    .section-afmcreed .card-body .score-img {
+        position: relative;
+    }
+    
+    .section-afmcreed .card-body .score-img img {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .section-afmcreed .card-body .p-properties {
+        margin-bottom: 96px;
+    }
+    
+    .section-afmcreed .develop-head {
+        font-size: 80px;
+        line-height: 90px;
+        font-family: 'HurmeGeometricSans4Black';
+        text-align: center;
+        display: block;
+        color: #00863f;
+        text-transform: uppercase;
+        margin-bottom: 63px;
+    }
+    
+    .section-afmcreed .card-body .p-span {
+        color: #00863f;
+        font-family: 'HurmeGeometricSans4Black';
+        margin-bottom: 32px;
+        display: block;
+    }
+    
+    .section-afmcreed .card-body .span-img {
+        margin-bottom: 33px;
+    }
+    /* afm-culture page ends here */
+    /* page scorecard starts here */
+    
+    .section-scorecard {
+        padding: 167px 0;
+    }
+    
+    .section-scorecard .score-img img {
+        width: 100%;
+    }
+    
+    .section-scorecard .accordions h5 {
+        font-size: 32px;
+        font-family: 'HurmeGeometricSans4Black';
+        text-transform: uppercase;
+        color: #fefefe;
+    }
+    
+    .section-scorecard .accordions .card-header {
+        padding: 40px 30px;
+        cursor: pointer;
+    }
+    
+    .section-scorecard .accordions .card-header.lead {
+        background-color: #800000;
+    }
+    
+    .section-scorecard .accordions .card-header.market {
+        background-color: #005000;
+    }
+    
+    .section-scorecard .accordions .card-header.trade {
+        background-color: #215967
+    }
+    
+    .section-scorecard .accordions .card {
+        margin-bottom: 84px;
+        border: none;
+    }
+    
+    .section-scorecard .accordions .card-body {
+        padding: 0;
+    }
+    
+    .accordions .card-header h5::after {
+        content: '\f0dd';
+        font-family: 'Fontawesome';
+        position: absolute;
+        right: 60px;
+        top: 20%;
+        transform: translateY(-50%);
+        font-size: 70px;
+        color: #fff;
+    }
+    
+    .accordions .card-header h5[aria-expanded="true"]:after {
+        transform: rotate(-180deg);
+    }
+    
+    .section-scorecard .accordions .card-header h5 {
+        font-size: 58px;
+        line-height: 64px;
+        font-family: 'HurmeGeometricSans4Black';
+        color: #fff;
+        text-transform: uppercase;
+        position: relative;
+    }
+    
+    .section-scorecard .h2-heading {
+        margin: 0px 0px 158px;
+    }
+    /* Footer Start */
+    
+    footer {
+        background: url('../images/ftr-bg.png') no-repeat;
+        background-size: cover;
+        min-height: 178px;
+    }
+    
+    footer .ftr-logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: -150px auto 0;
+        width: 267px;
+    }
+    /* Footer End */
+    /* Responsive */
+    
+    @media screen and (max-width: 2013px) {
+        .section-framework .framework-content {
+            max-width: 86%;
+        }
+    }
+    
+    @media screen and (max-width: 1874px) {
+        .section-framework .our-voice h2 {
+            font-size: 51px;
+            line-height: 64px;
+        }
+        .section-framework .our-uses .handleheld h3 {
+            font-size: 54px;
+            line-height: 64px;
+        }
+        .section-framework .development h2 {
+            font-size: 41px;
+        }
+        .section-framework .our-purpose h2 {
+            font-size: 84px;
+            line-height: 104px;
+        }
+        .section-framework .our-purpose h3 {
+            font-size: 89px;
+            line-height: 110px;
+        }
+        .section-framework .position-content h3 {
+            font-size: 84px;
+            line-height: 110px;
+        }
+        .section-framework .meet-content h2 {
+            font-size: 100px;
+            line-height: 135px;
+        }
+    }
+    
+    @media screen and (max-width: 1700px) {
+        .team .team-col img {
+            width: 400px;
+            height: 400px;
+        }
+    }
+    
+    @media screen and (max-width: 1666px) {
+        .section-framework .our-uses .handleheld h3 {
+            font-size: 49px;
+            line-height: 55px;
+        }
+        .section-framework .our-voice h2 {
+            font-size: 37px;
+            line-height: 48px;
+        }
+        .section-framework .our-purpose h2 {
+            font-size: 79px;
+            line-height: 92px;
+        }
+        .section-framework .our-purpose h3 {
+            font-size: 79px;
+            line-height: 92px;
+        }
+        .section-framework .position-content h3 {
+            font-size: 79px;
+            line-height: 92px;
+        }
+        .section-framework .meet-content h2 {
+            font-size: 100px;
+            line-height: 111px;
+        }
+        .section-framework .mexicanity h2 {
+            font-size: 180px;
+            line-height: 214px;
+        }
+        .section-framework .meet-content p {
+            font-size: 40px;
+            line-height: 50px;
+        }
+        .section-framework .frame-work-heading h2 span {
+            font-size: 94px;
+            line-height: 109px;
+        }
+        .section-framework .frame-work-heading h2 {
+            font-size: 105px;
+            line-height: 115px;
+        }
+        .section-framework .our-uses .handleheld h6 {
+            font-size: 25px;
+            line-height: 40px;
+        }
+        .section-framework .development h2 {
+            font-size: 36px;
+            line-height: 48px;
+        }
+        .section-gift-avostar .avo-paragraph {
+            font-size: 38px;
+            line-height: 45px;
+        }
+        .section-training .p-head-h4 {
+            font-size: 38px;
+        }
+        .framework-content .list-number {
+            position: absolute;
+            left: -140px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 120px;
+            height: 120px;
+            font-family: 'olivier';
+            font-size: 110px;
+            text-align: center;
+            background-color: #000;
+            border-radius: 50%;
+        }
+        .section-framework .framework-content {
+            max-width: 90%;
+        }
+        .section-framework .our-purpose h2 {
+            font-size: 75px;
+            line-height: 88px;
+        }
+        .section-framework .our-voice {
+            min-height: 400px;
+        }
+    }
+    
+    @media screen and (max-width: 1600px) {
+        /* .content {
+            padding: 150px 0 200px;
+        } */
+        .section-creed {
+            padding: 157px 0 442px;
+        }
+        .content .ambo-box {
+            padding: 150px 15px;
+            min-height: 500px;
+            margin-bottom: 100px;
+        }
+        .content .ambo-box span {
+            font-size: 90px;
+            line-height: 95px;
+        }
+        .content .ambo-box h3 {
+            font-size: 78px;
+            line-height: 90px;
+        }
+        .content .pink-box,
+        .content .red-box,
+        .content .lightBlue-box {
+            min-height: auto;
+            padding: 100px 15px;
+        }
+        .content .ambo-detail span {
+            font-size: 100px;
+            line-height: 90px;
+        }
+        .content .ambo-detail h3 {
+            margin: 0 0 100px;
+            font-size: 120px;
+        }
+        .ambo-vido button.video-ptn {
+            width: 300px;
+            height: 300px;
+        }
+        .ftr-detail h4 {
+            margin: 0 0 40px;
+            font-size: 80px;
+            line-height: 60px;
+        }
+        .ftr-detail p {
+            font-size: 50px;
+            line-height: 60px;
+        }
+        .team h2 {
+            font-size: 115px;
+        }
+        .team .team-col h4 {
+            margin: 40px 0 0;
+            font-size: 80px;
+            line-height: 90px;
+            color: #0c8a46;
+            font-weight: 900;
+            font-family: 'HurmeGeometricSans4Black';
+        }
+        footer .ftr-logo {
+            width: 250px;
+        }
+    }
+    
+    @media screen and (max-width: 1536px) {
+        .content .ambo-box {
+            padding: 100px 15px;
+            min-height: 400px;
+            margin-bottom: 80px;
+        }
+        .content .ambo-box span {
+            font-size: 80px;
+            line-height: 85px;
+        }
+        .content .ambo-box h3 {
+            font-size: 70px;
+            line-height: 80px;
+        }
+        .content .pink-box,
+        .content .red-box,
+        .content .lightBlue-box {
+            min-height: auto;
+            padding: 100px 15px;
+        }
+        .team h2 {
+            font-size: 100px;
+        }
+        .team .team-col img {
+            width: 350px;
+            height: 350px;
+            padding: 20px;
+        }
+        .team .team-col h4 {
+            margin: 30px 0 0;
+            font-size: 70px;
+            line-height: 80px;
+        }
+        footer .ftr-logo {
+            width: 200px;
+            margin: -120px auto 0;
+        }
+        .section-bhags .ceo-sec h4 {
+            font-size: 47px;
+            line-height: 57px;
+            max-width: 196px;
+        }
+    }
+    
+    @media screen and (max-width: 1466px) {
+        .content.dashboard .profile-info h2 {
+            font-size: 90px;
+            line-height: 100px;
+        }
+    }
+    
+    @media screen and (max-width: 1366px) {
+        .what-is-ambo {
+            padding: 147px 0 1160px;
+        }
+        .content .ambo-box {
+            padding: 80px 15px;
+            min-height: 350px;
+            margin-bottom: 70px;
+        }
+        .content .ambo-box span {
+            font-size: 70px;
+            line-height: 75px;
+        }
+        .content .ambo-box h3 {
+            font-size: 65px;
+            line-height: 70px;
+        }
+        .content .pink-box,
+        .content .red-box,
+        .content .lightBlue-box {
+            min-height: auto;
+            padding: 80px 15px;
+        }
+        .team h2 {
+            font-size: 90px;
+            line-height: 95px;
+            margin-bottom: 80px;
+        }
+        .team .team-col {
+            margin-bottom: 100px;
+        }
+        .team .team-col h4 {
+            font-size: 60px;
+            line-height: 70px;
+        }
+        .content .ambo-detail h3 {
+            margin: 0 0 70px;
+            font-size: 100px;
+        }
+        .content .ambo-detail span {
+            font-size: 90px;
+        }
+        .ambo-vido button.video-ptn {
+            width: 200px;
+            height: 200px;
+        }
+        .ambo-vido {
+            margin-bottom: 120px;
+        }
+        .team .team-col img {
+            width: 300px;
+            height: 300px;
+        }
+        .ftr-detail {
+            margin-bottom: 100px;
+        }
+        .ftr-detail h4 {
+            font-size: 70px;
+        }
+        .ftr-detail p {
+            font-size: 40px;
+            line-height: 50px;
+        }
+        footer {
+            min-height: 150px;
+        }
+        footer .ftr-logo {
+            width: 150px;
+            margin: -80px auto 0;
+        }
+        /* page afm creed */
+        .section-creed .training-development {
+            background-color: #ebebeb;
+            padding: 30px;
+        }
+        .section-creed .training-content h4 {
+            font-size: 40px;
+            line-height: 50px;
+        }
+        .section-creed .training-content p {
+            font-size: 35px;
+            line-height: 50px;
+        }
+        .training-slider .owl-nav button.owl-next {
+            right: -20px;
+        }
+        .training-slider .owl-nav button.owl-prev {
+            left: -20px;
+        }
+        .section-creed {
+            padding: 100px 0 200px;
+        }
+        /* page startegic page starts here */
+        .section-framework .frame-work-heading h2 span {
+            font-size: 70px;
+            line-height: 87px;
+        }
+        .section-framework .frame-work-heading h2 {
+            font-size: 90px;
+            line-height: 115px;
+        }
+        .section-framework {
+            padding: 100px 15px 0px;
+        }
+        .section-framework .our-purpose h3 {
+            font-size: 56px;
+            line-height: 73px;
+        }
+        .section-framework .our-purpose h2 {
+            font-size: 50px;
+            line-height: 68px;
+        }
+        .section-framework .position-content h3 {
+            font-size: 54px;
+            line-height: 71px;
+        }
+        .section-framework .position-content h2 {
+            font-size: 100px;
+            line-height: 124px;
+        }
+        .section-framework .meet-content h2 {
+            font-size: 65px;
+            line-height: 80px;
+        }
+        .section-framework .meet-content p {
+            font-size: 27px;
+            line-height: 38px;
+        }
+        .section-framework .our-voice h2 {
+            font-size: 25px;
+            line-height: 35px;
+        }
+        .section-framework .our-voice {
+            min-height: 335px;
+        }
+        .section-framework .mexicanity h4 {
+            font-size: 40px;
+            line-height: 50px;
+        }
+        .section-framework .mexicanity h2 {
+            font-size: 120px;
+            line-height: 150px;
+        }
+        .section-framework .mexicanity p {
+            font-size: 36px;
+            line-height: 58px;
+        }
+        .section-framework .our-uses .handleheld h3 {
+            font-size: 33px;
+            line-height: 38px;
+        }
+        .section-framework .our-uses .handleheld h6 {
+            font-size: 18px;
+            line-height: 26px;
+        }
+        .section-framework .our-uses .handleheld {
+            padding: 108px 25px 77px 14px;
+        }
+        .section-framework .our-purpose {
+            padding: 53px 40px;
+        }
+        .section-framework .position-content {
+            padding: 53px 40px;
+        }
+        .section-framework .maria-content {
+            padding: 53px 40px;
+        }
+        .section-framework .maya-content {
+            padding: 53px 40px;
+        }
+        .section-framework .main-stream-content {
+            padding: 53px 40px;
+        }
+        .section-framework .food-service-content {
+            padding: 53px 40px;
+        }
+        .section-framework .our-voice {
+            padding-left: 40px;
+        }
+        .section-framework .development {
+            padding-left: 40px;
+        }
+        .section-framework .development h6 {
+            font-size: 36px;
+            line-height: 44px;
+        }
+        .section-framework .development h6 {
+            margin-bottom: 40px;
+        }
+        .section-framework .development h2 {
+            font-size: 24px;
+            line-height: 34px;
+        }
+        .section-framework .development {
+            min-height: auto;
+        }
+        .section-bhags {
+            padding: 100px 0 200px;
+        }
+        .h2-heading {
+            margin: 0px 0px 100px;
+        }
+        .section-bhags .ceo-content h3 {
+            font-size: 32px;
+            line-height: 43px;
+        }
+        .section-bhags .ceo-sec .ceo-img {
+            top: 50%;
+            max-width: 200px;
+            left: -12px;
+            transform: translateY(-50%);
+        }
+        .section-bhags .ceo-sec .ceo-img img {
+            max-width: 180px;
+        }
+        .section-bhags .ceo-sec h4 {
+            max-width: 171px;
+        }
+        .section-bhags .accordions .card-header h5 {
+            font-size: 48px;
+            line-height: 55px;
+        }
+        .section-bhags .card-body h3 {
+            font-size: 48px;
+            line-height: 56px;
+        }
+        .section-culture .slider-color {
+            height: 500px;
+        }
+        .p-properties {
+            font-size: 35px;
+            line-height: 45px;
+        }
+        .section-culture .accordions .card-header h5 {
+            font-size: 45px;
+            line-height: 55px;
+        }
+        .h3-properties {
+            font-size: 32px;
+            line-height: 45px;
+        }
+        .section-culture .card {
+            margin-bottom: 50px;
+        }
+        .accordions .card-header {
+            padding: 30px 61px;
+        }
+        .section-culture .accordions .card-header h5::after {
+            top: 16%;
+        }
+        .section-gift-avostar .avo-paragraph {
+            font-size: 24px;
+            line-height: 35px;
+        }
+        .section-gift-avostar .employee-selector-list {
+            padding: 40px 30px;
+            height: 687px;
+        }
+        .section-gift-avostar .avostar-btn:first-child {
+            margin-right: 40px;
+        }
+        .section-gift-avostar .avo-paragraph {
+            margin-bottom: 50px;
+        }
+        .section-gift-avostar .avostar-btn {
+            font-size: 35px;
+        }
+        .section-gift-avostar .avostar-label {
+            font-size: 30px;
+            line-height: 38px;
+            width: 60%;
+        }
+        .section-gift-avostar .avostar-row {
+            margin-bottom: 18px;
+        }
+        .section-gift-avostar .employee-selector-list {
+            height: 75vh;
+        }
+        .content.dashboard .profile-img {
+            width: 200px;
+            height: 200px;
+        }
+        .content.dashboard .profile-info h2 {
+            font-size: 60px;
+            line-height: 70px;
+        }
+        .section-afmcreed .card {
+            margin-bottom: 50px;
+        }
+        .afm-btn {
+            padding: 24px 151px;
+        }
+        .section-afmcreed .develop-head {
+            font-size: 50px;
+            line-height: 60px;
+            margin-bottom: 40px;
+        }
+        .training-slider .owl-nav button.owl-prev,
+        .training-slider .owl-nav button.owl-next {
+            width: 50px;
+            height: 50px;
+        }
+        .training-slider .owl-nav button.owl-next::after {
+            font-size: 30px;
+        }
+        .training-slider .owl-nav button.owl-prev::after {
+            font-size: 30px;
+        }
+        .accordion-heading {
+            font-size: 47px;
+        }
+        .framework-content .list-number {
+            left: -115px;
+            width: 100px;
+            height: 100px;
+            font-size: 81px;
+        }
+    }
+    
+    @media screen and (max-width: 1199px) {
+        .what-is-ambo {
+            padding: 80px 0 760px;
+        }
+        .section-who-we-are {
+            padding: 80px 0 760px;
+        }
+        .content .ambo-box {
+            padding: 50px 15px;
+            min-height: 300px;
+            margin-bottom: 50px;
+        }
+        .content .ambo-box span {
+            font-size: 50px;
+            line-height: 55px;
+        }
+        .content .ambo-box h3 {
+            font-size: 55px;
+            line-height: 60px;
+        }
+        .content .pink-box,
+        .content .red-box,
+        .content .lightBlue-box {
+            min-height: auto;
+            padding: 50px 15px;
+        }
+        .section-employee {
+            padding: 80px 0 87px;
+        }
+        .team h2 {
+            font-size: 70px;
+            line-height: 80px;
+            margin-bottom: 70px;
+        }
+        .team .team-col h4 {
+            font-size: 50px;
+            line-height: 60px;
+        }
+        .content .ambo-detail h3 {
+            margin: 0 0 50px;
+            font-size: 80px;
+            line-height: 90px;
+        }
+        .content .ambo-detail span {
+            font-size: 70px;
+        }
+        .team .team-col img {
+            width: 270px;
+            height: 270px;
+            padding: 15px;
+        }
+        .ftr-detail {
+            margin-bottom: 50px;
+        }
+        .ftr-detail h4 {
+            font-size: 60px;
+            margin: 0 0 30px;
+        }
+        .ftr-detail p {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        .section-afm-main {
+            padding: 80px 0 200px;
+        }
+        .section-scorecard .accordions .card-header h5 {
+            font-size: 35px;
+            line-height: 45px;
+        }
+        footer {
+            min-height: 140px;
+        }
+        .accordion-heading {
+            font-size: 35px;
+            line-height: 45px;
+        }
+        .fpo-text {
+            font-size: 100px;
+            line-height: 110px;
+            top: 35px;
+            right: 46px;
+        }
+        .section-training .p-head-h4 {
+            font-size: 25px;
+        }
+        .section-training {
+            padding: 70px 0 300px;
+        }
+        .framework-content .list-number {
+            left: -98px;
+            width: 85px;
+            height: 85px;
+            font-size: 74px;
+        }
+        .avoss-img {
+            max-width: 100%;
+        }
+    }
+    
+    @media screen and (max-width: 991px) {
+        header {
+            padding: 30px 0;
+        }
+        #nav-icon {
+            margin: 10px auto;
+        }
+        header .logo {
+            max-width: 220px;
+        }
+        header .back-btn {
+            max-width: 120px;
+        }
+        header .home {
+            max-width: 60px;
+        }
+        /* .content {
+            padding: 80px 0 100px;
+        } */
+        .content .ambo-box {
+            min-height: 220px;
+            margin-bottom: 40px;
+            border-width: 10px;
+        }
+        .content .ambo-box span {
+            font-size: 40px;
+            line-height: 45px;
+        }
+        .content .ambo-box h3 {
+            font-size: 50px;
+            line-height: 55px;
+        }
+        .team h2 {
+            font-size: 50px;
+            line-height: 60px;
+            margin-bottom: 50px;
+        }
+        .team .team-col img {
+            width: 220px;
+            height: 220px;
+            padding: 10px;
+        }
+        .team .team-col h4 {
+            font-size: 40px;
+            line-height: 50px;
+            margin-top: 20px;
+        }
+        .team .team-col {
+            margin-bottom: 70px;
+        }
+        /* afm creed page */
+        .section-creed h2 {
+            font-size: 80px;
+            line-height: 95px;
+            padding-bottom: 50px;
+        }
+        .section-creed h2 span {
+            font-size: 80px;
+            line-height: 95px;
+        }
+        .section-creed .training h3 {
+            font-size: 40px;
+            line-height: 50px;
+        }
+        .section-creed .training {
+            padding: 30px 37px;
+        }
+        .section-creed .training-slider .aware-slide img {
+            max-width: 80%;
+        }
+        /* .training-slider .owl-nav button.owl-prev, .training-slider .owl-nav button.owl-next {
+            background-color: #f15d2a;
+            width: 70px;
+            height: 70px;
+        } */
+        /* page startegic starts here */
+        .section-framework .frame-work-heading h2 span {
+            font-size: 56px;
+            line-height: 75px;
+        }
+        .section-framework .frame-work-heading h2 {
+            font-size: 65px;
+            line-height: 80px;
+        }
+        .section-framework .our-purpose h3 {
+            font-size: 44px;
+            line-height: 55px;
+        }
+        .section-framework .our-purpose h2 {
+            font-size: 35px;
+            line-height: 50px;
+        }
+        .section-framework .our-uses .handleheld {
+            max-width: 50%;
+        }
+        .section-framework .meet-content img {
+            margin-top: 50px;
+        }
+        .section-framework .development {
+            margin-bottom: 40px;
+        }
+        .avoss-img {
+            margin-top: 50px;
+        }
+        .h2-heading {
+            font-size: 100px;
+            line-height: 105px;
+        }
+        .ceo-sec {
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        .section-bhags .ceo-content {
+            margin-top: 50px;
+        }
+        .section-bhags .ceo-sec .ceo-img img {
+            max-width: 150px;
+        }
+        .section-bhags .ceo-sec h4 {
+            max-width: 100%;
+            width: 100%;
+            text-align: center;
+        }
+        .section-bhags .accordions .card-header h5::after {
+            right: 0;
+        }
+        .section-bhags .accordions .card-header h5 {
+            font-size: 35px;
+            line-height: 45px;
+        }
+        .section-bhags .card-body h3 {
+            font-size: 35px;
+            line-height: 43px;
+        }
+        .accordions .card-header {
+            padding: 30px;
+        }
+        .section-culture .organization {
+            padding: 30px;
+        }
+        .section-culture .accordions .card-header h5 {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        .section-culture .accordions .card-header h5::after {
+            top: 33%;
+            font-size: 40px;
+        }
+        .h3-properties {
+            font-size: 25px;
+            line-height: 32px;
+        }
+        .accordions .card-body {
+            padding: 30px;
+        }
+        .section-culture .slider-color {
+            height: 400px;
+        }
+        .p-properties {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        .section-culture .p-properties {
+            margin-bottom: 30px;
+        }
+        .section-culture .afm-life-body .p-properties {
+            margin-bottom: 20px;
+        }
+        .section-culture .organization {
+            padding: 30 pxpx;
+            background-color: #efefef;
+            margin-bottom: 50px;
+        }
+        .section-culture {
+            padding: 70px 0px 100px;
+        }
+        .section-gift-avostar .h2-heading {
+            margin: 0px 0px 50px;
+        }
+        .section-scorecard {
+            padding: 80px 0;
+        }
+        .section-scorecard .accordions .card-header h5 {
+            font-size: 25px;
+            line-height: 35px;
+        }
+        .section-scorecard .accordions .card-header {
+            padding: 30px;
+        }
+        .accordions .card-header h5::after {
+            font-size: 50px;
+        }
+        .section-scorecard .accordions .card {
+            margin-bottom: 40px;
+            border: none;
+        }
+        .section-scorecard .h2-heading {
+            margin: 0px 0px 80px;
+            font-size: 80px;
+        }
+        .section-scorecard .h2-span {
+            font-size: 88px;
+        }
+        .section-gift-avostar .h2-span {
+            font-size: 89px;
+            line-height: 95px;
+        }
+        .section-gift-avostar .h2-heading {
+            font-size: 70px;
+            line-height: 85px;
+        }
+        .section-gift-avostar {
+            padding: 80px 0 90px;
+        }
+        .section-gift-avostar .avo-paragraph {
+            font-size: 18px;
+            line-height: 25px;
+        }
+        .section-gift-avostar .mgr_body {
+            margin: 0 !important;
+        }
+        .section-gift-avostar .avostar-field {
+            font-size: 23px;
+        }
+        .section-gift-avostar .avostar-label {
+            font-size: 25px;
+            line-height: 38px;
+            width: 100%;
+        }
+        .section-gift-avostar .avostar-btn {
+            font-size: 25px;
+            padding: 10px 30px;
+        }
+        .content.dashboard .profile-img {
+            width: 150px;
+            height: 150px;
+            border: 10px solid #00863f;
+        }
+        .content.dashboard .profile-info h2 {
+            font-size: 45px;
+            line-height: 55px;
+        }
+        .mgr_heading {
+            padding: 10px !important;
+            max-width: 100%;
+            margin: 0;
+        }
+        #menu_heading .key {
+            padding: 0px !important;
+        }
+        .dashboard-filter {
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+        }
+        .info-filter {
+            margin-top: 10px;
+        }
+        .section-afmcreed .card {
+            margin-bottom: 40px;
+        }
+        .fpo-text {
+            font-size: 80px;
+            line-height: 110px;
+            top: 10px;
+            right: 15px;
+        }
+        .afm-btn {
+            padding: 10px 51px;
+            font-size: 30px;
+        }
+        .section-afmcreed {
+            padding: 70px 0 150px;
+        }
+        .section-afmcreed .develop-head {
+            font-size: 35px;
+            line-height: 45px;
+            margin-bottom: 30px;
+        }
+        .section-training .training-global p::after {
+            width: 20px;
+            height: 20px;
+            left: 0;
+        }
+        .section-training .training-global p {
+            padding-left: 30px;
+        }
+        .accordion-heading {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        .section-framework .framework-content {
+            max-width: 100%;
+        }
+        .section-framework .numbering {
+            margin-bottom: 150px;
+        }
+        .section-framework .numbering:first-child {
+            margin-top: 100px;
+        }
+        .section-framework .numbering .list-number {
+            left: 50%;
+            top: -110px;
+            transform: translateX(-50%);
+        }
+    }
+    
+    @media screen and (max-width: 767px) {
+        .mgr_body {
+            border: none !important;
+        }
+        .table-wrapper {
+            overflow-x: scroll;
+        }
+        /* .content {
+            padding: 50px 0 70px;
+        } */
+        .content .ambo-box {
+            padding: 40px 15px;
+            margin-bottom: 30px;
+            border-width: 8px;
+            flex-direction: row;
+        }
+        .content .ambo-box span {
+            font-size: 35px;
+            line-height: 40px;
+        }
+        .content .ambo-box h3 {
+            padding: 0 10px;
+        }
+        .team h2 {
+            font-size: 40px;
+            line-height: 50px;
+            margin-bottom: 40px;
+        }
+        .team .team-col {
+            margin-bottom: 50px;
+        }
+        .team .team-col h4 {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        footer .ftr-logo {
+            width: 100px;
+            margin: -50px auto 0;
+        }
+        /* page afm creed */
+        .section-creed .training h3 {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        .section-creed .training-content h4 {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        .section-creed .training-content p {
+            font-size: 29px;
+            line-height: 38px;
+            font-family: 'HurmeGeometricSans4';
+            padding-left: 20px;
+        }
+        .section-creed .training-content p::before {
+            content: '';
+            left: 0;
+            top: 11px;
+            width: 15px;
+            height: 15px;
+        }
+        .section-creed .training-development {
+            padding: 20px;
+        }
+        .section-creed {
+            padding: 60px 0 100px;
+        }
+        /* page strategic starts here */
+        .section-framework .frame-work-heading h2 span {
+            font-size: 45px;
+            line-height: 55px;
+        }
+        .section-framework .frame-work-heading h2 {
+            font-size: 55px;
+            line-height: 65px;
+        }
+        .section-framework {
+            padding: 60px 0 0px;
+        }
+        .section-framework .frame-work-heading h2 {
+            padding-bottom: 60px;
+        }
+        .section-framework .our-purpose h3 {
+            font-size: 38px;
+            line-height: 46px;
+        }
+        .section-framework .our-purpose h2 {
+            font-size: 30px;
+            line-height: 41px;
+            margin-top: 20px;
+        }
+        .section-framework .position-content h3 {
+            font-size: 38px;
+            line-height: 46px;
+        }
+        .section-framework .position-content h2 {
+            font-size: 80px;
+            line-height: 95px;
+        }
+        .section-framework .meet-content h2 {
+            font-size: 50px;
+            line-height: 65px;
+        }
+        .section-framework .our-voice h2 {
+            font-size: 21px;
+            line-height: 30px;
+        }
+        .section-framework .our-voice {
+            min-height: auto;
+        }
+        .section-framework .our-voice h6 {
+            font-size: 45px;
+            line-height: 45px;
+            margin-bottom: 20px;
+        }
+        .section-framework .mexicanity h2 {
+            font-size: 90px;
+            line-height: 101px;
+        }
+        .section-framework .our-uses .handleheld {
+            padding: 69px 25px 77px 14px;
+        }
+        .section-framework .development h2 {
+            font-size: 28px;
+            line-height: 35px;
+        }
+        .section-framework .development {
+            min-height: auto;
+        }
+        .content.strategic {
+            padding: 0 0 90px;
+        }
+        .section-framework .meet-content p {
+            font-size: 24px;
+            line-height: 35px;
+        }
+        .h2-heading {
+            font-size: 80px;
+            line-height: 90px;
+        }
+        .h2-span {
+            font-size: 100px;
+            line-height: 105px;
+        }
+        .section-bhags .ceo-sec .ceo-img img {
+            max-width: 120px;
+        }
+        .section-bhags .accordions .card-header {
+            padding: 30px 30px;
+        }
+        .section-bhags .card-body {
+            padding: 30px;
+        }
+        .section-bhags .ceo-content {
+            padding-left: 20px;
+        }
+        .section-bhags .ceo-president {
+            padding: 33px 30px;
+        }
+        .h2-heading {
+            margin: 0px 0px 40px;
+        }
+        .h3-properties {
+            font-size: 22px;
+            line-height: 32px;
+        }
+        .section-culture .accordions .card-header h5::after {
+            right: 0;
+        }
+        .section-gift-avostar .avo-paragraph {
+            font-size: 16px;
+            line-height: 25px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .section-gift-avostar .custom-checkbox label {
+            width: 120px;
+        }
+        .section-gift-avostar .custom-checkbox label img {
+            width: 95px;
+            height: 95px;
+        }
+        .section-gift-avostar .custom-checkbox label p {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .section-gift-avostar .mgr_body {
+            border: none !important;
+        }
+        .content.dashboard .profile-img {
+            width: 130px;
+            height: 130px;
+            border: 4px solid #00863f;
+        }
+        .content.dashboard .profile-info h2 {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        .pg-section h2 {
+            font-size: 45px;
+            line-height: 55px;
+        }
+        .bg-section h2 {
+            font-size: 45px;
+            line-height: 55px;
+        }
+        .accordion-heading {
+            font-size: 27px;
+            line-height: 37px;
+        }
+        .section-training .p-head-h4 {
+            font-size: 21px;
+            line-height: 30px;
+        }
+        .accordions .card-header h5::after {
+            right: 0;
+        }
+        .accordion-heading.female-heading {
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
+    
+    @media screen and (max-width: 640px) {
+        header .logo {
+            max-width: 150px;
+        }
+        header .back-btn {
+            max-width: 80px;
+        }
+        header .home {
+            max-width: 40px;
+        }
+        .training-slider .owl-nav button.owl-prev::after {
+            font-size: 30px;
+        }
+        .training-slider .owl-nav button.owl-next::after {
+            font-size: 30px;
+        }
+        .training-slider .owl-nav button.owl-prev,
+        .training-slider .owl-nav button.owl-next {
+            width: 40px;
+            height: 40px;
+        }
+        .training-slider .owl-nav button.owl-next::after {
+            font-size: 20px;
+        }
+        .training-slider .owl-nav button.owl-prev::after {
+            font-size: 20px;
+        }
+        .section-creed .training-content h4 {
+            font-size: 22px;
+            line-height: 32px;
+        }
+        .section-creed .training-content p {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .section-creed .training-content p::before {
+            top: 7px;
+        }
+        .section-employee {
+            padding: 50px 0 87px;
+        }
+        .section-creed .training h3 {
+            font-size: 24px;
+            line-height: 35px;
+        }
+        /* strategic pagfe starts here */
+        .section-framework .frame-work-heading h2 span {
+            font-size: 39px;
+            line-height: 55px;
+        }
+        .section-framework .frame-work-heading h2 {
+            font-size: 53px;
+            line-height: 55px;
+        }
+        .section-framework .position-content h3 {
+            font-size: 30px;
+            line-height: 37px;
+        }
+        .section-framework .meet-content h2 {
+            font-size: 42px;
+            line-height: 58px;
+        }
+        .section-framework .mexicanity h4 {
+            font-size: 35px;
+            line-height: 43px;
+        }
+        .section-framework .mexicanity h2 {
+            font-size: 65px;
+            line-height: 101px;
+        }
+        .section-framework .mexicanity p {
+            font-size: 24px;
+            line-height: 41px;
+        }
+        .section-framework .our-uses .handleheld {
+            max-width: 100%;
+            text-align: center;
+        }
+        .h2-heading {
+            font-size: 74px;
+            line-height: 90px;
+        }
+        .h2-span {
+            font-size: 90px;
+            line-height: 105px;
+        }
+        .section-bhags .ceo-content {
+            border: none;
+            padding-left: 0;
+        }
+        .section-bhags .ceo-content h3 {
+            font-size: 31px;
+            line-height: 43px;
+        }
+        .section-bhags .accordions .card-header h5 {
+            font-size: 24px;
+            line-height: 30px;
+        }
+        .section-bhags .accordions .card-header h5::after {
+            font-size: 46px;
+        }
+        .section-bhags .card-body h3 {
+            font-size: 25px;
+            line-height: 35px;
+        }
+        .section-bhags .ceo-sec h4 {
+            font-size: 32px;
+        }
+        .section-culture .accordions .card-header h5 {
+            font-size: 22px;
+            line-height: 30px;
+        }
+        .section-culture .card {
+            margin-bottom: 30px;
+        }
+        .p-properties {
+            font-size: 22px;
+            line-height: 29px;
+        }
+        .accordions .card-header h5::after {
+            right: 0;
+            line-height: 41px;
+        }
+        .section-scorecard .accordions .card-header h5 {
+            font-size: 18px;
+            line-height: 35px;
+        }
+        .section-scorecard .accordions .card-header {
+            padding: 20px;
+        }
+        .section-scorecard .h2-span {
+            font-size: 76px;
+        }
+        .section-scorecard .h2-heading {
+            font-size: 67px;
+            margin-bottom: 50px;
+        }
+        .section-gift-avostar .h2-span {
+            font-size: 73px;
+            line-height: 95px;
+        }
+        .section-gift-avostar .h2-heading {
+            font-size: 60px;
+            line-height: 81px;
+        }
+        .section-gift-avostar .employee-selector-list {
+            padding: 20px;
+        }
+        .section-gift-avostar .custom-checkbox label {
+            width: 100px;
+        }
+        .section-gift-avostar .custom-checkbox label img {
+            width: 80px;
+            height: 80px;
+        }
+        .section-gift-avostar .avostar-field {
+            font-size: 16px;
+        }
+        .section-gift-avostar .avostar-label {
+            font-size: 18px;
+            line-height: 28px;
+        }
+        .section-gift-avostar .avostar-btn:first-child {
+            margin-right: 20px;
+        }
+        .section-gift-avostar .avostar-btn {
+            font-size: 16px;
+            padding: 10px 15px;
+        }
+        .team .team-col img {
+            max-width: 300px;
+            max-height: 300px;
+        }
+        .content.dashboard .profile-img {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+        .pg-section h2 {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        .pg-section .pg-tab-btn span i {
+            font-size: 50px;
+            line-height: 45px;
+        }
+        .bg-section h2 {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        .bg-section .bg-tab-btn span i {
+            font-size: 50px;
+            line-height: 45px;
+        }
+        .bg-section {
+            margin-bottom: 40px;
+            padding: 20px;
+        }
+        .pg-section {
+            margin-bottom: 40px;
+            padding: 20px;
+        }
+        .toggle {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .toggle a {
+            max-width: 47%;
+            width: 100%;
+            text-align: center;
+            color: #99c93d;
+        }
+        .colors {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .colors span {
+            max-width: 33.3%;
+            width: 100%;
+        }
+        .colors .filter-block {
+            padding: 5px 0;
+        }
+        .section-afmcreed .card {
+            margin-bottom: 25px;
+        }
+        .afm-btn {
+            padding: 10px 51px;
+            font-size: 22px;
+        }
+        .section-afmcreed .card-body .p-properties {
+            margin-bottom: 50px;
+        }
+        .fpo-text {
+            font-size: 45px;
+            line-height: 47px;
+        }
+        .section-afmcreed .develop-head {
+            font-size: 26px;
+            line-height: 32px;
+            margin-bottom: 30px;
+        }
+        .section-afmcreed .card-body .training-slider {
+            margin-bottom: 20px;
+        }
+        .section-training .training-global p::after {
+            top: 7px;
+        }
+    }
+    
+    @media screen and (max-width: 575px) {
+        #nav-icon {
+            margin: 0 0 0 -15px;
+            width: 40px;
+            height: 30px;
+        }
+        #nav-icon span {
+            height: 6px;
+        }
+        #nav-icon span:nth-child(2),
+        #nav-icon span:nth-child(3) {
+            top: 10px;
+        }
+        #nav-icon span:nth-child(4) {
+            top: 20px;
+        }
+        header button.toggle-menu span {
+            margin: 0;
+        }
+        .nav-menu ul li a {
+            font-size: 20px;
+        }
+        .nav-menu {
+            width: 260px;
+            padding-top: 30px;
+        }
+        /* .content {
+            padding: 40px 0 60px;
+        } */
+        .content .ambo-box {
+            flex-direction: column;
+            text-align: center;
+        }
+        .content .ambo-box h3 {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        .content .ambo-box span {
+            display: block;
+        }
+        .team h2 {
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 30px;
+        }
+        .team .team-col {
+            margin-bottom: 50px;
+        }
+        .team .team-col h4 {
+            font-size: 25px;
+            line-height: 30px;
+        }
+        .content .ambo-detail h3 {
+            margin: 0 0 40px;
+            font-size: 50px;
+            line-height: 55px;
+        }
+        .content .ambo-detail span {
+            font-size: 45px;
+            line-height: 50px;
+        }
+        .ambo-vido {
+            margin-bottom: 50px;
+        }
+        .ambo-vido button.video-ptn {
+            width: 100px;
+            height: 100px;
+        }
+        .ftr-detail h4 {
+            font-size: 50px;
+            margin: 0 0 20px;
+        }
+        .ftr-detail p {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .what-is-ambo {
+            padding: 80px 0 460px;
+        }
+        .section-who-we-are {
+            padding: 80px 0 460px;
+        }
+        .section-culture .slider-color {
+            height: 350px;
+        }
+    }
+    
+    @media screen and (max-width: 480px) {
+        header {
+            padding: 20px 0;
+        }
+        header .logo {
+            max-width: 110px;
+        }
+        header .back-btn {
+            max-width: 60px;
+        }
+        header .home {
+            max-width: 30px;
+        }
+        .section-creed .training {
+            padding: 30px 20px;
+        }
+        .section-creed .training h3 {
+            text-align: center;
+        }
+        .section-creed .training-content h4 {
+            font-size: 18px;
+            line-height: 28px;
+        }
+        /* startegic page here */
+        .section-framework .our-purpose {
+            padding: 40px 20px;
+        }
+        .section-framework .position-content {
+            padding: 40px 20px;
+        }
+        .section-framework .maria-content {
+            padding: 40px 20px;
+        }
+        .section-framework .maya-content {
+            padding: 40px 20px;
+        }
+        .section-framework .main-stream-content {
+            padding: 40px 20px;
+        }
+        .section-framework .food-service-content {
+            padding: 40px 20px;
+        }
+        .section-framework .our-voice {
+            padding-left: 20px;
+        }
+        .section-framework .development {
+            padding-left: 20px;
+        }
+        .section-framework .development h2 {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .section-framework .meet-content h2 {
+            font-size: 30px;
+            line-height: 58px;
+        }
+        .section-framework .position-content h3 {
+            font-size: 23px;
+            line-height: 31px;
+        }
+        .section-framework .our-purpose h3 {
+            font-size: 28px;
+            line-height: 35px;
+        }
+        .section-framework .meet-content h2 {
+            margin-top: 6px;
+        }
+        .section-framework .mexicanity h2 {
+            font-size: 53px;
+            line-height: 85px;
+        }
+        .section-framework .mexicanity p {
+            font-size: 19px;
+            line-height: 30px;
+        }
+        .content.strategic {
+            padding: 0 0 54px;
+        }
+        .what-is-ambo {
+            padding: 48px 0 460px;
+        }
+        .section-bhags {
+            padding: 70px 0 150px;
+        }
+        .section-bhags .ceo-sec h4 {
+            font-size: 36px;
+        }
+        .section-bhags .ceo-sec .ceo-img img {
+            max-width: 90px;
+        }
+        .section-bhags .ceo-content h3 {
+            font-size: 22px;
+            line-height: 35px;
+        }
+        .section-bhags .accordions .card-header {
+            padding: 20px;
+        }
+        .section-bhags .accordions .card-header h5 {
+            font-size: 18px;
+            line-height: 25px;
+        }
+        .section-bhags .accordions .card-header h5::after {
+            font-size: 35px;
+        }
+        .section-bhags .card-body {
+            padding: 20px;
+        }
+        .section-bhags .card-body h3 {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .section-bhags .card {
+            margin-bottom: 30px;
+        }
+        .section-bhags .ceo-president {
+            margin-bottom: 30px;
+        }
+        .h2-heading {
+            margin: 0px 0px 40px;
+        }
+        .section-bhags .ceo-sec .ceo-img {
+            bottom: 0;
+            max-width: 200px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .ceo-sec {
+            margin-bottom: 86px;
+        }
+        .section-culture .h2-heading {
+            font-size: 60px;
+            line-height: 70px;
+        }
+        .accordions .card-header {
+            padding: 20px;
+        }
+        .section-culture .accordions .card-header h5 {
+            font-size: 18px;
+            line-height: 30px;
+        }
+        .section-culture .accordions .card-header h5::after {
+            font-size: 26px;
+        }
+        .section-culture .organization {
+            padding: 20px;
+        }
+        .accordions .card-body {
+            padding: 20px;
+        }
+        .accordions .card-header h5 ::after {
+            font-size: 40px;
+        }
+        .section-scorecard .accordions .card-header h5 {
+            font-size: 16px;
+            line-height: 25px;
+        }
+        .h3-properties {
+            font-size: 18px;
+            line-height: 28px;
+        }
+        .p-properties {
+            font-size: 18px;
+            line-height: 26px;
+        }
+        .logo {
+            min-width: auto !important;
+        }
+        .section-gift-avostar .h2-heading {
+            font-size: 38px;
+            line-height: 65px;
+            margin: 0px 0px 30px;
+        }
+        .section-gift-avostar .h2-span {
+            font-size: 45px;
+            line-height: 55px;
+        }
+        .section-gift-avostar {
+            padding: 50px 0 90px;
+        }
+        .section-gift-avostar .custom-checkbox label {
+            width: 92px;
+        }
+        .section-gift-avostar .custom-checkbox label img {
+            width: 75px;
+            height: 75px;
+        }
+        .section-gift-avostar .custom-checkbox label p {
+            font-size: 18px;
+            line-height: 23px;
+        }
+        .section-gift-avostar .avostar-field {
+            font-size: 13px;
+        }
+        .section-gift-avostar .avostar-label {
+            font-size: 16px;
+            line-height: 28px;
+        }
+        .section-gift-avostar .avostar-btn {
+            font-size: 15px;
+            padding: 10px 9px;
+        }
+        .section-gift-avostar .avostar-btn:first-child {
+            margin-right: 10px;
+        }
+        .team .team-col img {
+            max-width: 130px;
+            max-height: 130px;
+            object-fit: cover;
+        }
+        .content.dashboard .profile-info h2 {
+            font-size: 16px;
+            line-height: 30px;
+        }
+        .content.dashboard .profile-img {
+            width: 80px;
+            height: 80px;
+        }
+        .pg-section h2 {
+            font-size: 24px;
+            line-height: 40px;
+        }
+        .bg-section h2 {
+            font-size: 24px;
+            line-height: 40px;
+        }
+        .toggle {
+            padding: 15px 10px;
+        }
+        .toggle a {
+            max-width: 100%;
+            width: 100%;
+            text-align: center;
+        }
+        .content.dashboard .profile-info {
+            padding: 11px 0 30px;
+        }
+        .colors span {
+            max-width: 49%;
+        }
+        .filter-group {
+            flex-wrap: wrap;
+        }
+        .filter-group .dropdown {
+            max-width: 100%;
+            width: 100%;
+            flex: 100%;
+        }
+        .dropdown-menu.show {
+            width: 100%;
+        }
+        .filter-group .dropdown button {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .yearly_filter {
+            margin-left: 5px;
+            margin-top: 5px;
+        }
+        .accordion-heading {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .section-training .training-global p {
+            padding-left: 20px;
+        }
+        .section-training .training-global p::after {
+            width: 10px;
+            height: 10px;
+            left: 0;
+            top: 8px;
+        }
+        .section-training .p-head-h4 {
+            font-size: 18px;
+            line-height: 25px;
+        }
+        .fpo-text {
+            font-size: 25px;
+            line-height: 30px;
+        }
+    }

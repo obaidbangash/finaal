@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>AMB</title>
+</head>
+
+<body>
+    <!-- HEADER START -->
+    <div class="nav-menu">
+        <ul>
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 3</a></li>
+            <li><a href="#">Item 4</a></li>
+            <li><a href="#">Item 5</a></li>
+            <li><a href="#">Item 6</a></li>
+            <li><a href="#">Item 7</a></li>
+        </ul>
+    </div>
+    <header>
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-sm-10 col-9 text-center">
+                    <a class="logo" class="d-inline-block" href="#"><img class="img-fluid m-auto d-block" src="images/logo-img.png" alt=""></a>
+                </div>
+                <div class="col-sm-2 col-3 text-center">
+                    <button class="toggle-menu" type="button" id="nav-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END -->
+    <!-- CONTENT START -->
+    <div class="content">
+        <div class="section-afm-main">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 px-xl-5 px-lg-4">
+                        <a href="#">
+                            <div class="ambo-box">
+                                <span>What is</span>
+                                <h3>AMBO?</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 px-xl-5 px-lg-4">
+                        <a href="#">
+                            <div class="ambo-box">
+                                <h3>AMBO</h3>
+                                <span>Platform</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 px-xl-5 px-lg-4">
+                        <a href="#">
+                            <div class="ambo-box">
+                                <span>Avo</span>
+                                <h3>STARS</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 px-xl-5 px-lg-4">
+                        <a href="#">
+                            <div class="ambo-box blue-box">
+                                <h3>AFM</h3>
+                                <span>Scorecard</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 px-xl-5 px-lg-4">
+                        <a href="#">
+                            <div class="ambo-box orange-box">
+                                <span>AFM</span>
+                                <h3>BHAGS</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 px-xl-5 px-lg-4">
+                        <a href="#">
+                            <div class="ambo-box lightGreen-box">
+                                <h3>AFM</h3>
+                                <span>Creed</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 px-xl-5 px-lg-4">
+                        <a href="#">
+                            <div class="ambo-box pink-box">
+                                <h3>AFM <span>Culture</span></h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 px-xl-5 px-lg-4">
+                        <a href="#">
+                            <div class="ambo-box red-box">
+                                <h3><span>Strategic</span> FRAmework</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 px-xl-5 px-lg-4">
+                        <a href="#">
+                            <div class="ambo-box lightBlue-box">
+                                <h3><span>Who We</span> are</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CONTENT END -->
+    <!-- FOOTER START -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="ftr-logo">
+                        <img class="img-fluid" src="images/ftr-logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("button.toggle-menu").click(function() {
+                $("body").toggleClass("active");
+            });
+
+            $('#nav-icon').click(function() {
+                $(this).toggleClass('open');
+            });
+            $('.nav-menu ul li a').click(function() {
+                $("body").removeClass("active");
+                $("#nav-icon").removeClass("open");
+            });
+        });
+    </script>
+</body>
+
+</html>
